@@ -7,20 +7,27 @@
         <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Barlow&family=Karma:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-          <div class="header-item"> 
-            <a class="title-a" href="#">DoctorCare</a>
-          </div>
-          <div class="header-item second-item-container">
-            <div class="menu-item">Inicio</div>
-            <div class="menu-item">Sobre</div>
-            <div class="menu-item">Servicos</div>
-            <div class="menu-item">Dopoimentos</div>
-          </div>
-          <div class="header-item">
-            <button class="button-normal">Agendar consulta</button> 
-          </div>
-        </header>
+      <div class="container-1">
+      <header>
+        <div class="header-item"> 
+          <a class="title-a" href="#">DoctorCare</a>
+        </div>
+        <div class="header-item second-item-container">
+          <div class="menu-item">Inicio</div>
+          <div class="menu-item">Sobre</div>
+          <div class="menu-item">Servicos</div>
+          <div class="menu-item">Dopoimentos</div>
+        </div>
+        <div class="header-item">
+          <button class="button-normal">Agendar consulta</button> 
+        </div>
+        <div class="container" onclick="burgerMenu(this)">
+          <div class="b1"></div>
+          <div class="b2"></div>
+          <div class="b3"></div>
+        </div>
+      </header>
+    </div>
       <main>
         <div class="landing-page">
           <div>
@@ -300,5 +307,6 @@
             </svg>                        
         </div>
       </footer>
+      <script src="../js/main.js"></script>
     </body>
 </html>

@@ -2,17 +2,11 @@ html {
     font-family: 'Akshar', sans-serif;
 }
  :root {
-    --primary-color: color:#DCE9E2;
-}
-
-@media screen and (max-width: 768px) {
- .flex-container {
-    flex-direction: column;
-}
+    --brand-green: #00856F;
 }
 
 header {
-background-color: #00856F;
+background-color: var(--brand-green);
 display: flex;
 flex-direction: row;
 justify-content: space-around;
@@ -150,17 +144,16 @@ right: -34px;
 }
 
 .bg {
-display: flex;
-justify-content: space-around;
-position: absolute;
-width: 75%;
-height: 210px;
-left: 210px;
-top: 630px;
-background: #FFFAF1;
-border: 1px solid #DCE9E2;
-border-radius: 6px;
-}
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    width: 75%;
+    height: 210px;
+    left: 15%;
+    background: #FFFAF1;
+    border: 1px solid #DCE9E2;
+    border-radius: 6px;
+    }
 
 .bg-item {
 display: flex;
@@ -361,3 +354,35 @@ padding-left: 16%;
 padding-top: 8%;
 padding-right: 10%;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    align-items: flex-end;
+}
+
+
+.b1, .b2 {
+    width: 36px;
+    height: 3px;
+    background-color: #FFFAF1;
+    margin: 5px 0;
+    transition: 0.5s;
+}
+
+.b3 {
+    width: 20px;
+    height: 3px;
+    background-color: #FFFAF1;
+    margin: 5px 0;
+    transition: 0.5s;
+
+}
+.change .b1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .b3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+.change .b2 {opacity: 0;}
