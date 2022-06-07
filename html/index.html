@@ -3,11 +3,11 @@
     <head>
         <title>Page Title</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="../css/index.css" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Barlow&family=Karma:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
     </head>
     <body>
-      <div class="container-1">
       <header>
         <div class="header-item"> 
           <a class="title-a" href="#">DoctorCare</a>
@@ -18,8 +18,8 @@
           <div class="menu-item">Servicos</div>
           <div class="menu-item">Dopoimentos</div>
         </div>
-        <div class="header-item">
-          <button class="button-normal">Agendar consulta</button> 
+        <div class="header-item-2">
+          <input type="button" class="button-normal" onclick="alert('Contact us via Viber : +3080505005')" value="Agende consulta">
         </div>
         <div class="container" onclick="burgerMenu(this)">
           <div class="b1"></div>
@@ -27,7 +27,6 @@
           <div class="b3"></div>
         </div>
       </header>
-    </div>
       <main>
         <div class="landing-page">
           <div>
@@ -37,7 +36,7 @@
               <div class="subtitle">Os médicos da DoctorCare vão além dos sintomas 
               para tratar a causa raiz de sua doença e proporcionar uma cura a longo prazo.</div>
               <div class="button-div">
-              <button class="button-primary">Agende sua consulta</button>
+                <input type="button" class="button-primary" onclick="alert('Contact us via Viber : +3080505005')" value="Agende sua consulta">
                 <svg class="viber" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12.8337 10.6667C12.667 10.5834 11.5837 10.0834 11.417 10C11.2503 9.91671 11.0837 9.91671 10.917 10.0834C10.7503 10.25 10.417 10.75 10.2503 
                 10.9167C10.167 11.0834 10.0003 11.0834 9.83366 11C9.25033 10.75 8.66699 10.4167 8.16699 10C7.75033 9.58337 7.33366 9.08337 7.00033 8.58337C6.91699 
@@ -156,8 +155,8 @@
           </div>    
         </div> 
         <div class="sobrenos">
-          <div>
-              <img src="../images/doctor.png">
+          <div class="sobrenos-picture">
+              <img class="image-card" src="../images/doctor.png">
           </div>
           <div class="sobrenos-item">
               <div class="heat-text">SOBRE NÓS</div>
@@ -192,7 +191,7 @@
               <div class="helper-text">contato@doctorcare.com</div>
               </div>
               <div class="button-div">
-                <button class="button-primary">Agende sua consulta</button>
+                <input type="button" class="button-primary" onclick="alert('Contact us via Viber : +3080505005')" value="Agende sua consulta">
                 <svg class="viber" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12.8337 10.6667C12.667 10.5834 11.5837 10.0834 11.417 10C11.2503 9.91671 11.0837 9.91671 10.917 10.0834C10.7503 10.25 10.417 10.75 10.2503 
                 10.9167C10.167 11.0834 10.0003 11.0834 9.83366 11C9.25033 10.75 8.66699 10.4167 8.16699 10C7.75033 9.58337 7.33366 9.08337 7.00033 8.58337C6.91699
@@ -209,7 +208,7 @@
             </div>
           </div>
           <div>
-              <img src="../images/man-smiling.png">
+              <img class="image-card" src="../images/man-smiling.png">
           </div>
         </div>
       </main>
