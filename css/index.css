@@ -119,10 +119,20 @@ color: #495057;
 padding-bottom: 2%;
 width: 65%;
 }
+.button-div:hover {
+    display: block;
+    background:  #00453A;
+    border-radius: 40px;
+}
 
+.button-div{
+    background-color: #00856F;
+    display: block;
+    width: fit-content;
+    border-radius: 40px;
+}
 .button-primary {
-    background: #00856F;
-display: flex;
+display: block;
 justify-content: flex-end;
 align-items: center;
 padding-right: 5%;
@@ -348,6 +358,13 @@ padding-top: 5%;
 padding-bottom: 12%;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    align-items: flex-end;
+    visibility: hidden;
+} 
 .footer-svg {
 display: flex;
 justify-content: space-between;
@@ -356,7 +373,6 @@ padding-left: 16%;
 padding-top: 8%;
 padding-right: 10%;
 }
-
 
 .b1, .b2 {
     width: 36px;
@@ -395,6 +411,7 @@ padding-right: 10%;
         flex-direction: column;
         cursor: pointer;
         align-items: flex-end;
+        visibility: visible;
     }    
 }
 
@@ -410,7 +427,7 @@ padding-right: 10%;
         }
  .button-primary {
     padding-right: 5%;
-    width: 90%;
+    width: 100%;
     height: 52px;
  }
  .viber {
@@ -465,7 +482,7 @@ padding-right: 10%;
    
     .button-primary {
         padding-right: 5%;
-        width: 90%;
+        width: 100%;
         height: 52px;
     }
     .viber {
