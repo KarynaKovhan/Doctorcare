@@ -1,6 +1,7 @@
 html {
     font-family: 'Akshar', sans-serif;
 }
+
  :root {
     --brand-green: #00856F;
 }
@@ -8,7 +9,6 @@ html {
 body {
     margin: 0;
 }
-
 
  a{
 text-decoration: none;
@@ -31,10 +31,6 @@ font-style: normal;
 font-weight: 400;
 font-size: 28px;
 line-height: 26px;
-}
-
-.menu_icon {
-    visibility: hidden;
 }
 
 div.header-item.second-item-container {
@@ -113,6 +109,7 @@ color: #495057;
 padding-bottom: 2%;
 width: 65%;
 }
+
 .button-div:hover {
     display: block;
     background:  #00453A;
@@ -125,6 +122,7 @@ width: 65%;
     width: fit-content;
     border-radius: 40px;
 }
+
 .button-primary {
 display: block;
 justify-content: flex-end;
@@ -361,6 +359,9 @@ padding-top: 8%;
 padding-right: 10%;
 }
 
+#hidden-button {
+    visibility: hidden;
+}
 
 
 @media  (max-width:768px) {
@@ -370,14 +371,17 @@ padding-right: 10%;
     }
    
     .hamb {
+        padding: 10px;
         display:flex;
 
     }
+
     .hamb-field {
         padding: 10px 20px;
         cursor: pointer;
     }
-    .bar {
+
+    .bar1, .bar2, .bar3{
         display: block;
         width: 30px;
         height: 2px;
@@ -385,6 +389,7 @@ padding-right: 10%;
         background-color: #FFFAF1;
         transition: 0.2s;
     }
+
     .popup {
         position: fixed;
         top: 70px;
@@ -394,13 +399,66 @@ padding-right: 10%;
         transition: 0.3s;
         width: 100%;
         height: 30%;
+        z-index: 1;
     }
+
     .popup.open {
         left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
     }
-    .menu > li > a{
-        color: red;
+
+    .popup .menu {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        padding: 0 0;
+      }
+     
+      .popup .menu > li {
+        width: 100%;
+      }
+     
+      .popup .menu > li > a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 45px;
+        text-align: center;
+        color: #FFFAF1;
+      }
+     
+      .popup .menu > li > a:hover {
+        background-color: rgba(122, 82, 179, 0.1);
+      }
+     
+      .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-5px, 3px);
     }
+    
+    .change .bar2 {opacity: 0;}
+    
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+
+      body.noscroll {
+    overflow: hidden;
+      }
+      #hidden-button {
+          visibility: visible;
+          margin: 30px;
+          width: 70%;
+      }
 }
 
 @media  (max-width:768px) {
@@ -493,10 +551,6 @@ padding-right: 10%;
 }   
     }
 
-
-
-
-
     .navbar {
 z-index: 1;
 background-color: var(--brand-green);
@@ -506,7 +560,6 @@ height: 72px;
 position: fixed;
 top: 0;
 left: 0;
-min-height: 70px;
   width: 100%;
     }
 
@@ -538,6 +591,7 @@ min-height: 70px;
 
     .navbar-wrap .menu {
         display: flex;
+        align-items: center;
     }
 
     .navbar-wrap .menu >li {
@@ -550,10 +604,3 @@ min-height: 70px;
     align-items: center;
 }
 
-.navbar {
-    position: fixed; 
-  top: 0;
-  width: 100%; 
-  transition: top 0.3s;
-color: #000;
-}

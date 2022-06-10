@@ -33,3 +33,8 @@ function closeOnClick() {
   hamb.classList.remove("active");
   body.classList.remove("noscroll");
 }
+
+
+function myFunction(x) {
+    x.classList.toggle("change");
+}
