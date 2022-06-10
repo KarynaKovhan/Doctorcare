@@ -8,25 +8,32 @@
         <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Barlow&family=Karma:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
     </head>
     <body>
-      <header>
-        <div class="header-item"> 
-          <a class="title-a" href="#">DoctorCare</a>
-        </div>
-        <div class="header-item second-item-container">
-          <div class="menu-item">Inicio</div>
-          <div class="menu-item">Sobre</div>
-          <div class="menu-item">Servicos</div>
-          <div class="menu-item">Dopoimentos</div>
-        </div>
-        <div class="header-item-2">
-          <input type="button" class="button-normal" value="Agende consulta">
-        </div>
-        <div class="container" onclick="burgerMenu(this)">
-          <div class="b1"></div>
-          <div class="b2"></div>
-          <div class="b3"></div>
-        </div>
-      </header>
+        <nav class="navbar">
+          <div class="container">
+            <div class="navbar-wrap">
+              <div class="hamb">
+                <div class="hamb-field" id="hamb">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+              <div class="header-item"> 
+                <a class="title-a" href="#">DoctorCare</a>
+              </div>
+              <ul class="menu" id="menu">
+                <li><a class="menu-item" href="#">DoctorCare</a></li>
+                <li><a class="menu-item" href="#">Inicio</a></li>
+                <li><a class="menu-item" href="#">Sobre</a></li>
+                <li><a class="menu-item" href="#">Dopoimentos</a></li>
+              </ul>
+              <div class="myHeaderItem" id="myHeaderItem">
+                <input type="button" class="button-normal" value="Agende consulta">
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="popup" id="popup"></div>
       <main>
         <div class="landing-page">
           <div>
