@@ -27,9 +27,14 @@
                 <li><a class="menu-item color" href="#">Dopoimentos</a></li>
               </ul>
               <input type="button" class="button-normal button-primary" id="hidden-button" value="Agende sua consulta">
-              <div class="myHeaderItem" id="myHeaderItem">
-                <input type="button" class="button-normal" value="Agende consulta">
-              </div>
+                <button class="button-normal" id="button-normal" value="Agende consulta">Agende consulta</button>
+                  <div id="myModal" class="modal">
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <h1 class="modal-title">Contact us via Viber!</h1>
+                      <p class="modal-text">If you want to make an appointment, call +3080505005</p>
+                    </div>
+                  </div>
         </nav>
         <div class="popup" id="popup"></div>
       <main>
@@ -40,7 +45,14 @@
               <div class="subtitle">Os médicos da DoctorCare vão além dos sintomas 
               para tratar a causa raiz de sua doença e proporcionar uma cura a longo prazo.</div>
               <div class="button-with-icon">
-                <input type="button" class="button-normal button-primary" value="Agende sua consulta">         
+                <button class="button-normal button-primary" id="button-primary" value="Agende sua consulta">Agende sua consulta</button>
+                <div id="myModalSecond" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h1 class="modal-title">Contact us!</h1>
+                    <p class="modal-text">We are waiting for your call+3080505005</p>
+                  </div>
+                </div>
               </div>
           </div>
           <div class="landing-page-section">
@@ -132,8 +144,15 @@
               <div class="helper-text">contato@doctorcare.com</div>
               </div>
               <div class="button-with-icon">
-                <input type="button" class="button-normal button-primary" value="Agende sua consulta">   
-            </div>
+                <button class="button-normal button-primary" id="button-primary-second" value="Agende sua consulta">Agende sua consulta</button>
+                <div id="myModalThird" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h1 class="modal-title">Contact us!</h1>
+                    <p class="modal-text">We are waiting for your call+3080505005</p>
+                  </div>
+                </div>
+              </div>
           </div>
           <div>
               <img class="image-card" src="../images/man-smiling.png" style="width: 100%;">
