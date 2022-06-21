@@ -21,6 +21,7 @@ li {
 
  .popup {
      display: none;
+
  }
 
 .modal {
@@ -40,14 +41,25 @@ li {
     margin: 15% auto; 
     padding: 20px;
     border: 1px solid #888;
-    width: 30%;
-  }
+    width: 40%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
   
   .close {
     color: var(--brand-green);
     float: right;
     font-size: 28px;
     font-weight: bold;
+    align-self: flex-end;
+    cursor: pointer;
+  }
+
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
   }
   
   .modal-title {
@@ -61,8 +73,20 @@ li {
     color: var(--grey);
   }
 
+#tel {
+    max-width: 120px;
+    background-color: #DCE9E2;
+    border: 2px solid #00453A;
+}
 
-
+#submit {
+height: 40px;
+  background: linear-gradient(136.51deg, var(--grey) 0%, var(--brand-green)  94.14%);
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+}
 
  .navbar {
     z-index: 1;
@@ -100,10 +124,19 @@ align-items: center;
 .menu {
     display: flex;
     padding: 0;
+    align-items: center;
 }
 
 .menu-item {
     margin: 0 7px;
+}
+
+.popup-item {
+    visibility: hidden;
+}
+
+.hover-button {
+    visibility: hidden;
 }
 
 .color {
@@ -396,11 +429,17 @@ gap: 50px;
 }
 
 @media  (max-width: 765px) {
+    .button-normal {
+        visibility: hidden;;
+    }
+    .button-primary {
+        visibility: visible;
+    }
    .navbar {
     display: flex;
     align-items: center;
     }
-    .menu, .myHeaderItem {
+    .menu {
         display: none;
     }
    
@@ -436,6 +475,28 @@ gap: 50px;
         z-index: 1;
     }
 
+    .popup-item {
+        visibility: visible;
+        display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    } 
+
+    .hover-button {
+        margin: 15px;
+        visibility: visible;
+        width: 274px;
+        height: 55px;
+        background: #FFFFFF;
+        border-radius: 40px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+        text-transform: uppercase;
+        color: var(--brand-green);
+
+    }
+
     .popup.open {
         left: 0;
         height: 100%;
@@ -463,8 +524,8 @@ gap: 50px;
         justify-content: center;
         font-style: normal;
         font-weight: 700;
-        font-size: 24px;
-        line-height: 45px;
+        font-size: 30px;
+        line-height: 70px;
         text-align: center;
         color: #FFFAF1;
       }
@@ -473,6 +534,10 @@ gap: 50px;
         background-color: rgba(122, 82, 179, 0.1);
       }
      
+      .popup .menu > .modal {
+        display: flex;
+        width: 100%;
+      }
       .change .bar1 {
         -webkit-transform: rotate(-45deg) translate(-9px, 6px);
         transform: rotate(-45deg) translate(-5px, 3px);
@@ -562,9 +627,11 @@ padding-right: 5%;
 width: 100%;
 height: 52px;
 }
+
 .viber {
 right: -15px;
 }
+
 .image-block {
 width: 222.64px;
 }
@@ -604,3 +671,7 @@ padding-top: 10px;
     width: 95%;
 }
 }
+
+
+
+

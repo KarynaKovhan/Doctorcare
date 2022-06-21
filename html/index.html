@@ -25,14 +25,39 @@
                 <li><a class="menu-item color" href="#">Inicio</a></li>
                 <li><a class="menu-item color" href="#">Sobre</a></li>
                 <li><a class="menu-item color" href="#">Dopoimentos</a></li>
+                <div class="button-mobile">
+                    <button type="button" class="hover-button myBtn" id="hover-button" value="Agende sua consulta">Agende sua consulta</button>
+                    <div class="modal">
+                      <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h1 class="modal-title">Contact us via Viber!</h1>
+                        <p class="modal-text">If you want to make an appointment, call +3080505005</p>
+                        <p class="modal-text">You can also go on a record online:</p>
+                        <p class="modal-text"><input type="tel" name="phone_number" list="tel-list" id="tel" required
+                          placeholder="+7 (900) 123-45-67" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"></p>
+                          <input id="submit" type="submit" value="Submit" class="submit-button">
+                      </div>
+                    </div>
+                </div>
+                <div class="popup-item"> 
+                  <img src="../svg/instagram.svg" />                 
+                  <img src="../svg/facebook.svg" />
+                   <img src="../svg/youtube.svg" />
+                </div>
               </ul>
               <input type="button" class="button-normal button-primary" id="hidden-button" value="Agende sua consulta">
-                <button class="button-normal" id="button-normal" value="Agende consulta">Agende consulta</button>
+                <button type="button" class="button-normal myBtn" id="button-normal" value="Agende consulta">Agende consulta</button>
                   <div id="myModal" class="modal">
                     <div class="modal-content">
                       <span class="close">&times;</span>
                       <h1 class="modal-title">Contact us via Viber!</h1>
                       <p class="modal-text">If you want to make an appointment, call +3080505005</p>
+                      <p class="modal-text">You can also go on a record online:</p>
+                      <div>
+                        <p class="modal-text"><input type="tel" name="phone_number" list="tel-list" id="tel" required
+                        placeholder="+7 (900) 123-45-67" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"></p>
+                        <input id="submit" type="submit" value="Submit" class="submit-button">
+                      </div>
                     </div>
                   </div>
         </nav>
@@ -45,7 +70,7 @@
               <div class="subtitle">Os médicos da DoctorCare vão além dos sintomas 
               para tratar a causa raiz de sua doença e proporcionar uma cura a longo prazo.</div>
               <div class="button-with-icon">
-                <button class="button-normal button-primary" id="button-primary" value="Agende sua consulta">Agende sua consulta</button>
+                <button type="button" class="button-normal button-primary myBtn" id="button-primary" value="Agende sua consulta">Agende sua consulta</button>
                 <div id="myModalSecond" class="modal">
                   <div class="modal-content">
                     <span class="close">&times;</span>
@@ -144,7 +169,7 @@
               <div class="helper-text">contato@doctorcare.com</div>
               </div>
               <div class="button-with-icon">
-                <button class="button-normal button-primary" id="button-primary-second" value="Agende sua consulta">Agende sua consulta</button>
+                <button class="button-normal button-primary myBtn" id="button-primary-second" value="Agende sua consulta">Agende sua consulta</button>
                 <div id="myModalThird" class="modal">
                   <div class="modal-content">
                     <span class="close">&times;</span>
