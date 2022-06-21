@@ -47,11 +47,7 @@ window.onscroll = () => {
   prevScrollpos = currentScrollPos;
 }
 
-
-
-
 var modal = document.getElementById('myModal');
-
 var myBtn = document.getElementsByClassName('myBtn');
 var close = document.getElementsByClassName('close')[0];
 
